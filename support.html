@@ -4,56 +4,74 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="Support information for Budget Ladder.">
-  <title>Budget Ladder Support</title>
-  <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
-  <link rel="apple-touch-icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
-  <link rel="stylesheet" href="./site.css">
+  <meta name="description" content="Help with Budget Ladder features, expense capture, retirement projections, optional AI, and developer tips.">
+  <title>Budget Ladder — Support</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; background: #07111f; color: #f5f7fb; font: 1rem/1.7 system-ui, sans-serif; }
+    main, header, footer { max-width: 48rem; margin: auto; padding: 1.5rem; }
+    header, footer { border-bottom: 1px solid #344152; }
+    footer { border-top: 1px solid #344152; border-bottom: 0; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; }
+    h2 { margin-top: 2rem; line-height: 1.3; font-size: 1.35rem; }
+    a { color: #65ffe5; text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid #65ffe5; outline-offset: 4px; }
+    .summary { padding: 1rem 1.25rem; background: #111e30; border: 1px solid #344152; border-radius: 1rem; }
+    .muted { color: #bdc7d4; }
+    li { margin-bottom: .5rem; }
+  </style>
 </head>
-<body class="legal-page">
-  <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="Budget Ladder home">
-      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="">
-      <span>Budget Ladder</span>
-    </a>
-    <nav aria-label="Primary">
-      <a href="./index.html#how-it-works">How it works</a>
-      <a href="./index.html#capture">Capture</a>
-      <a href="./privacy-policy.html">Privacy</a>
-      <a class="nav-cta" href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store</a>
-    </nav>
-  </header>
-
+<body>
+  <header><a href="./index.html">Budget Ladder</a> · <a href="./privacy-policy.html">Privacy</a></header>
   <main>
-    <section class="legal-hero">
-      <p class="eyebrow">Support</p>
-      <h1>Help for Budget Ladder.</h1>
-      <p class="hero-lede">Troubleshooting, permissions, and contact details for the current iPhone release.</p>
-    </section>
+    <h1>A little help when you need it.</h1>
+    <p class="muted">Budget Ladder Support · Version 1.7 guide</p>
+    <div class="summary"><p>Email <a href="mailto:snwizu@icloud.com">snwizu@icloud.com</a> with your device model, iOS version, Budget Ladder version, and a short description of the problem. Redact personal details from screenshots. Never send API keys, device passcodes, bank credentials, or full card numbers.</p></div>
 
-    <section class="legal-content">
-      <div class="legal-panel">
-        <p>Need help with Budget Ladder? Email <a href="mailto:snwizu@icloud.com">snwizu@icloud.com</a> with your iPhone model, iOS version, and a short description of what happened.</p>
-      </div>
+    <h2>Start simple</h2>
+    <p>Home shows your current budget and what remains. Expenses contains your records. More keeps additional tools available without crowding the main screen. To record a purchase, choose Add Expense and enter a label and amount. Notes, receipts, categories, and voice details are there when useful.</p>
 
-      <h2>Common Questions</h2>
-      <p><strong>Where is my data stored?</strong> Budget entries and attachments are stored locally on your device in the current build.</p>
-      <p><strong>Why does the app ask for camera, microphone, speech recognition, or photo access?</strong> These permissions support receipt photos, expense videos, imported media, and voice transcripts. They are used only after you choose one of those capture actions.</p>
-      <p><strong>Can I edit an expense?</strong> Yes. Open the expense feed and tap a ledger entry or its pencil button to update it.</p>
-      <p><strong>Does Budget Ladder require an account?</strong> No. The current build does not require account creation.</p>
+    <h2>Choose the features you see</h2>
+    <p>Open More → Choose features, or Choose your features on Home. Pin the Monthly plan or Retirement tab and show or hide Smart Fill, daily guidance, and Inbox &amp; Sources shortcuts. Keep it simple removes these shortcuts; Show everything restores them.</p>
+    <p>Your data stays saved and tools remain available from More. Hiding a capture shortcut does not stop an existing Shortcut automation. Hiding Smart Fill does not change your online-AI permission. Manage those separately in Sources and AI &amp; API.</p>
 
-      <h2>Contact</h2>
-      <p>For Budget Ladder support, email <a href="mailto:snwizu@icloud.com">snwizu@icloud.com</a>.</p>
-    </section>
+    <h2>An expense alert did not appear</h2>
+    <ol>
+      <li>Check More → Sources. Adding a bank/app name creates a label; it does not connect that app.</li>
+      <li>In Apple Shortcuts, confirm a supported personal automation selects the correct sender/source and passes actual text to Budget Ladder → Capture Expense Text.</li>
+      <li>Confirm that the Budget Ladder source is accepting input and that the Shortcut selects that exact source.</li>
+      <li>Use Test Only for a safe connection check. An in-app sample proves only the local demonstration, not real email delivery.</li>
+      <li>After a successful external test, turn Test Only off in the Shortcut for real captures and check More → Inbox. Test captures never change spending.</li>
+    </ol>
+    <p>Budget Ladder cannot read every notification, watch the lock screen, or inspect your mailbox. A supported automation must supply the text. Available triggers, account delivery, confirmation requirements, and locked-device behavior depend on your iOS/Shortcuts setup. If no suitable trigger supplies text, paste the alert manually or record the expense yourself.</p>
+    <p>Outlook app notifications are not a mailbox connection to Budget Ladder. If using an email automation, verify which Mail account and received-email content that automation actually supports. Do not assume that seeing an email in Outlook means the Shortcut can access it.</p>
+
+    <h2>Approve, dismiss, or auto-save?</h2>
+    <p>Captured items normally wait in Inbox and are not counted as spending. Approve an item to add it, or dismiss it without changing spending. Possible duplicates and unclear amounts need attention. Source-level auto-save is optional and needs a successful Shortcut test; it is separate from the visibility switches. Turning on Run Immediately in Shortcuts does not by itself enable Budget Ladder auto-save.</p>
+
+    <h2>Smart Fill and AI keys</h2>
+    <p>On-device Smart Fill needs no key or subscription. More → AI &amp; API offers optional bring-your-own-key processing; Gemini is the default provider. Use online AI starts off. Turning it on opens a named-provider permission review describing what text is sent, where it goes, retention and charges. Choose Keep on device to decline or Allow online AI to approve. With permission and a saved key, an explicit Fill Expense Details action sends the selected text for a suggested draft.</p>
+    <p>After an update, you may need to approve this new permission once even if you previously enabled online AI. Your key and provider choices are kept. Changing the provider or endpoint also needs permission for that recipient. Turning online AI off saves immediately and keeps future fills on-device.</p>
+    <p>For Gemini, confirm you are 18 or older, its API is available in your region, and your project has billing enabled before sending personal expense text. The app cannot verify or enable billing for you. Google's unpaid services must not receive personal information. Review the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>; if ineligible, leave online AI off.</p>
+    <p>The default Gemini model is Gemini 2.5 Flash-Lite. Custom model and provider settings remain yours to manage. If cloud processing fails, check the provider, model, account quota/billing, and key permissions. Budget Ladder may apply a local suggestion instead; read the status message and review the fields. A saved key is not proof that the provider accepted a request. Always check suggested amounts and dates before saving. Do not paste keys into support email or screenshots.</p>
+    <p>A developer tip does not pay an AI provider, create API credit, or supply a key. Provider charges and policies are separate. Automatic email capture, receipt import, and dictation do not automatically call your API provider.</p>
+
+    <h2>The month or date looks wrong</h2>
+    <p>Budget Ladder uses the device's current date and calendar. Check your device Date &amp; Time settings if the displayed date is wrong. The active ledger month may need a rollover: open More → Monthly plan and review the offered month. The app does not silently create future months. Background captures remain reviewable when the active month is not ready.</p>
+
+    <h2>Retirement withdrawal projections</h2>
+    <p>Open More → Retirement, then Plan withdrawals. Use the projected savings balance or enter your own. “% of balance” recalculates the withdrawal from each year's opening balance. “Annual amount” requests the same amount each year and can run short. Withdrawals happen before growth, and the schedule shows each year's result.</p>
+    <p>The 4% setting is an illustration, not a promise or an inflation-adjusted retirement rule. These projections omit taxes, fees, inflation, and variable market returns. They are educational estimates, not individualized financial advice.</p>
+
+    <h2>Free app and optional tips</h2>
+    <p>You can use every app feature without tipping. Open More → Support Budget Ladder to select among available one-time tip amounts and confirm through Apple. The slider selects preset App Store price points, not an arbitrary amount; the displayed price and currency come from Apple. Moving the slider is not a purchase; Apple's purchase flow is the confirmation. Developer tips are not charitable donations and do not renew, unlock features, or create AI credits. Choose Not now to close or Never ask me again to stop reminders; the support area remains available in More.</p>
+    <p>If a purchase is pending or interrupted, check its status before trying again. If prices cannot load, the app remains usable. For purchase history or refund requests, use <a href="https://reportaproblem.apple.com/">Apple's purchase-support service</a>. Support never needs your Apple Account password or payment-card number.</p>
+
+    <h2>Receipts, voice, exports, and data</h2>
+    <p>Camera, Photos, microphone, and speech permissions are requested for actions you choose. Change them in iOS Settings. Live camera features need a physical device, and on-device dictation depends on device/language support.</p>
+    <p>Expense records and attachments are stored locally. Export expenses as CSV from Expenses, or use media sharing controls for copies you need. CSV is an export of records, not a complete restorable backup of attachments, settings, or capture history. Do not delete the app as a first troubleshooting step; it can remove local files. Your device backups and exported copies have their own retention rules.</p>
+    <p>Learn about local storage, optional AI, keys, tips, and deletion choices in the <a href="./privacy-policy.html">Privacy Policy</a>.</p>
   </main>
-
-  <footer class="site-footer">
-    <span>Budget Ladder</span>
-    <nav aria-label="Footer">
-      <a href="./index.html">Home</a>
-      <a href="./privacy-policy.html">Privacy</a>
-      <a href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store</a>
-    </nav>
-  </footer>
+  <footer><a href="mailto:snwizu@icloud.com">Contact support</a> · <a href="./privacy-policy.html">Privacy Policy</a> · <a href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store listing</a></footer>
 </body>
 </html>

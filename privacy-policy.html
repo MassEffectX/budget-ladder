@@ -4,59 +4,71 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
-  <meta name="description" content="Budget Ladder privacy policy.">
-  <title>Budget Ladder Privacy Policy</title>
-  <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
-  <link rel="apple-touch-icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg">
-  <link rel="stylesheet" href="./site.css">
+  <meta name="description" content="How Budget Ladder handles local budgeting data, optional AI requests, developer tips, and your privacy choices.">
+  <title>Budget Ladder — Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; background: #07111f; color: #f5f7fb; font: 1rem/1.7 system-ui, sans-serif; }
+    main, header, footer { max-width: 48rem; margin: auto; padding: 1.5rem; }
+    header, footer { border-bottom: 1px solid #344152; }
+    footer { border-top: 1px solid #344152; border-bottom: 0; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; }
+    h2 { margin-top: 2rem; line-height: 1.3; font-size: 1.35rem; }
+    a { color: #65ffe5; text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid #65ffe5; outline-offset: 4px; }
+    .summary { padding: 1rem 1.25rem; background: #111e30; border: 1px solid #344152; border-radius: 1rem; }
+    .muted { color: #bdc7d4; }
+    li { margin-bottom: .5rem; }
+  </style>
 </head>
-<body class="legal-page">
-  <header class="site-header">
-    <a class="brand" href="./index.html" aria-label="Budget Ladder home">
-      <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e0/8f/46/e08f4609-e67e-3c99-f8af-c658e6a86595/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg" alt="">
-      <span>Budget Ladder</span>
-    </a>
-    <nav aria-label="Primary">
-      <a href="./index.html#how-it-works">How it works</a>
-      <a href="./index.html#capture">Capture</a>
-      <a href="./support.html">Support</a>
-      <a class="nav-cta" href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store</a>
-    </nav>
-  </header>
-
+<body>
+  <header><a href="./index.html">Budget Ladder</a> · <a href="./support.html">Support</a></header>
   <main>
-    <section class="legal-hero">
-      <p class="eyebrow">Privacy Policy</p>
-      <h1>Local-first by design.</h1>
-      <p class="hero-lede">Last updated: April 24, 2026</p>
-    </section>
+    <h1>Privacy, with clear choices.</h1>
+    <p class="muted">Privacy Policy · Version 1.7 · Last updated: September 8, 2026</p>
+    <div class="summary">
+      <p>Budget Ladder stores your budget and plans locally and does not require a Budget Ladder account. Online AI starts off. If you approve the named provider and explicitly request a fill, the selected transaction text is sent to that provider. You can use the local tools without an API key or a tip.</p>
+    </div>
 
-    <section class="legal-content">
-      <div class="legal-panel">
-        <p>Budget Ladder is designed as a local-first budgeting app. In the current build, budget entries, expense notes, receipt photos, short videos, and dictated transcripts stay on your device unless you choose to share media or save a copy back to Photos.</p>
-      </div>
+    <h2>Information stored on your device</h2>
+    <p>The app stores budget amounts, expense details, dates, categories, notes, receipt photos, videos, dictated transcripts, source labels, capture history, retirement assumptions, and display preferences in its local app storage. Retirement calculations and budget insights run on your device. The app does not include a Budget Ladder bank-sync, account-sync, or hosted AI service.</p>
+    <p>Device backups may contain app files according to your Apple settings. Local-first storage is not a promise that backups or copies you create will never leave the device.</p>
 
-      <h2>Data Collection</h2>
-      <p>Budget Ladder does not collect, sell, or share personal data in the current local-only build. The app does not require an account and does not upload your expense records to a server.</p>
+    <h2>Expense capture and Shortcuts</h2>
+    <p>Budget Ladder does not watch your lock screen, scan Notification Center, read another app's screen, or access your mailbox. A source name is a routing label, not a bank connection or notification permission.</p>
+    <p>If you configure a supported Apple Shortcut to send text to Budget Ladder, the app processes the supplied text locally. It does not automatically send that text to an AI provider. Incoming text can contain sensitive information; configure narrow filters and supply only what is needed for an expense.</p>
+    <p>Original capture text is stored while an item awaits review and is cleared when the item is saved or dismissed. Reviewed summaries and duplicate-detection information may remain until you clear reviewed history or remove the source. Saved expenses remain in the ledger when a source is removed.</p>
+    <p>Review is the default. Source-level auto-save is a separate, explicit setting that requires a successful Shortcut test. Hiding Inbox or Sources shortcuts does not pause those connections. To stop a source, change its acceptance setting or disable the corresponding automation in Shortcuts.</p>
 
-      <h2>Device Permissions</h2>
-      <p>Camera access is used only when you choose to capture receipt photos or short expense videos. Microphone and speech recognition access are used only when you choose to dictate expense details. Photo library access is used only when you import media or save a copy back to Photos.</p>
+    <h2>Optional online AI</h2>
+    <p>More → AI &amp; API lets you select Gemini or another supported provider and save your own API key. Online AI defaults off. Before enabling it, a confirmation names the provider and destination and explains the text sharing, retention and separate charges. Choose Keep on device to decline, or Allow online AI to approve. Changing the provider or endpoint requires permission for that recipient; older enabled settings require this privacy review once while retaining saved keys and preferences.</p>
+    <p>After approval, if online AI is enabled and a key is saved, tapping Fill Expense Details submits the selected text, its input type, and reference-date context to that provider so it can suggest expense fields. This may include text you typed or pasted, text extracted from a receipt, a dictated transcript, or a note you choose to submit. The app does not send your entire budget in that request.</p>
+    <p>Receipt images, videos, and audio recordings are not included in this text-only request. Importing a receipt or stopping dictation uses on-device processing and does not automatically call your API provider. A later explicit fill request can send the extracted or transcribed text if online AI is enabled.</p>
+    <p>Requests go directly to your configured provider, not a Budget Ladder processing server. Your provider receives the submitted content and the network/authentication information needed to handle the request. Its terms, account settings, retention rules, billing, and processing locations apply. We do not promise zero retention, no training, or deletion of data already sent to another provider. Check the provider's current policy before sending sensitive content; custom endpoints require particular care.</p>
+    <p>Gemini's permission step asks you to confirm you are 18 or older, the Gemini API is available in your region, and your project has billing enabled for personal expense text. Budget Ladder does not verify these account facts or activate billing for you. Google's unpaid API services must not receive personal information and may use content to improve products; paid-service handling differs. Review the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. If you cannot meet them, keep online AI off or choose another eligible provider.</p>
+    <p>Turn off Use online AI in More → AI &amp; API to keep future fills on-device. You can clear a saved key for each provider. Turning off online AI or clearing the key does not undo earlier requests or delete a provider's records. For provider-side deletion or key revocation, use that provider's controls.</p>
 
-      <h2>Local Storage</h2>
-      <p>Expense records and app data are stored locally on your device. Removing the app may remove locally stored app data depending on your device settings and backup configuration.</p>
+    <h2>API keys</h2>
+    <p>Keys are saved separately for each provider in the iOS Keychain, not in expense files or ordinary preferences. A saved key is not displayed again by the app. Saving or clearing a key does not itself make an AI request. Clear keys in AI &amp; API before removing the app if you want to remove those credentials; Keychain behavior can differ from ordinary app-file deletion.</p>
 
-      <h2>Contact</h2>
-      <p>For support or privacy questions, email <a href="mailto:snwizu@icloud.com">snwizu@icloud.com</a>.</p>
-    </section>
+    <h2>Camera, Photos, microphone, and speech</h2>
+    <p>The app requests these permissions for actions you choose: taking a receipt photo or expense video, importing or saving media, or dictating expense details. Dictation uses supported on-device speech recognition. If it is unavailable, you can type your expense instead. You can change permissions in iOS Settings.</p>
+
+    <h2>Free features and optional tips</h2>
+    <p>Budget Ladder's app features are free. Where available, optional one-time developer tips are processed through Apple's in-app purchase system at the preset price points displayed in the app. They are not charitable donations, and do not unlock features, create a subscription, or include AI credits. External AI providers may charge separately for use of your own account.</p>
+    <p>Apple handles the payment flow and its payment information under Apple's policies. Budget Ladder uses StoreKit's verified transaction information to recognize the purchase result; the app does not ask you to enter card details. The app keeps processed tip transaction identifiers, a tipped/not-tipped flag, and reminder preferences locally to avoid duplicate handling and unwanted prompts. It also keeps bounded foreground-day markers and reminder dates on your device. This information is not sent to a Budget Ladder server. Choosing not to tip does not restrict use of the app.</p>
+
+    <h2>Sharing, website visits, and support</h2>
+    <p>When you export a CSV, share media, or save a copy to Photos, your chosen destination receives that copy. Its storage and deletion controls apply separately from Budget Ladder.</p>
+    <p>The app does not include advertising or third-party analytics SDKs in this version. Opening the support website or another external link creates ordinary requests to that site's host. Those services may process technical connection information under their own policies; this is separate from uploading your ledger.</p>
+    <p>If you email support, your email address and the information you choose to include are handled through email services to respond to your request. Please do not send API keys, passcodes, bank credentials, full card numbers, or unredacted financial records. Contact us if you want help with information you previously sent to support.</p>
+
+    <h2>Keeping and removing information</h2>
+    <p>Use the app's available edit/delete controls for expense records and attachments, clear reviewed captures when no longer needed, and remove unwanted sources or API keys. Hiding a feature does not delete its information. Export any records you need before deleting data or removing the app. Removing the app may remove local files, while device backups, exports, Photos copies, Keychain items, support email, and provider records may remain under their respective controls.</p>
+
+    <h2>Questions and updates</h2>
+    <p>For support or privacy questions, contact <a href="mailto:snwizu@icloud.com">snwizu@icloud.com</a>. Updates to this policy will be posted here with a revised date. Review this policy and your selected provider's policy before using optional online processing.</p>
   </main>
-
-  <footer class="site-footer">
-    <span>Budget Ladder</span>
-    <nav aria-label="Footer">
-      <a href="./index.html">Home</a>
-      <a href="./support.html">Support</a>
-      <a href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store</a>
-    </nav>
-  </footer>
+  <footer><a href="./support.html">Get help</a> · <a href="https://apps.apple.com/us/app/budget-ladder/id6765471855">App Store listing</a></footer>
 </body>
 </html>
